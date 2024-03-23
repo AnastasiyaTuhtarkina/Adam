@@ -1,0 +1,108 @@
+#nav_bar{
+    background-color:rgba(247, 245, 245, 0);
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    transition:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+#nav_bar a{
+    text-decoration: none;
+    background-color:blue;
+    height: 30px;
+    width: 130px;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:azure;
+    transition:cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-radius: 1cm;
+}
+#nav_bar a:hover{
+    background-color:azure;
+    color:blue;
+}
+#main{
+    /* background:rgb(240, 197, 197); */
+    margin: 0px 7%;
+    color:darkblue;
+}
+#main h2{
+    font-size: 50px;
+}
+#main p{
+    font-size: 30px;
+}
+.revers{
+    flex-direction: row-reverse;
+}
+.info_conteiner{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px;
+    justify-content: space-between;
+    background-color:rgba(240, 241, 247, 0.527);
+}
+.info_conteiner img{
+    width: 280px;
+    height: 170px;
+}
+.info_conteiner p{
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:inherit;
+    margin-right: 20px;
+    color:darkblue;
+    font-family:cursive;
+}
+body{
+    background-image: url('/static/img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.prod_card{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid blue;
+    background-color:rgba(240, 241, 247, 0.527);
+}
+.card_img{
+    width: 300px;
+    height: 200px;
+
+}
+.card_img img{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+.card_text{
+    text-align: center;
+}
+.card_text h3{
+    font-size: 30px;
+    color:rgb(34, 34, 129);
+    margin-left: 5px;
+}
+.block{
+    margin: 20px;
+}
+#main form{
+    margin: 20px;
+}
+.but{
+    background-color: blue;
+    color: aliceblue;
+}
+.prod{background-color: azure;
+
+}

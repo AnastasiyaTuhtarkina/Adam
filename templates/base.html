@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/main_style.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <h1 style="display: flex; justify-content:center">
+        <img src="/static/img/logoza.ru.png" alt="">
+    </h1>
+    <div id="header">
+        <div id="logo"></div>
+        <div id="login"></div>
+    </div>
+    <div id="nav_bar">
+        {% for b in menu %}
+            <a href="{{b.link}}">{{b.name}}</a>
+        {% endfor %}
+    </div>
+    <div id="main">
+        {% block main %}
+        {% endblock %}
+    </div>
+</body>
+</html>

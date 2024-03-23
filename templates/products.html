@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{name}}{% endblock %}
+
+{% block main %}
+    <div id="cards">
+        {% for i in cards %}
+            <div class="prod_card">
+                <div class="card_img">
+                    <a href="product/{{ i.id }}">
+                        <img src="/static/img/{{ i.img }}" alt="">
+                    </a>
+                </div>
+                <div class="card_text">
+                    <h3>{{ i.name }}</h3>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
